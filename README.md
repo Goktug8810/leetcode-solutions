@@ -15,12 +15,12 @@ The purpose of this repository is to track my progress solving algorithm and dat
 - `alan-karmasikligi(space-complexity).txt`: Explains space complexity in Turkish.
 - `zaman-karmasikligi(time-complexity).txt`: Explains time complexity in Turkish.
 
-## Daily Problem List
+## Problem List
 
 
 | Type                 |
 |----------------------|
-| Type 1: Array        |
+| Type 1:         |
 |                      |
 | ...                  |
 
