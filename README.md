@@ -14,8 +14,9 @@ The purpose of this repository is to track my progress solving algorithm and dat
 
 ## Daily Problem List
 
-| Day | Problem Name         | Solution Link                                  |
-|-----|----------------------|------------------------------------------------|
-| 1   |                   |  |
-| 2   |                   |  |
-| ... | ...                   | ...                                            |
+| Type                 |
+|----------------------|
+| Type 1:         |
+|       |
+| ...                  |
+
