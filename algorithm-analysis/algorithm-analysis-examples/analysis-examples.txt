@@ -1,0 +1,66 @@
+1-Faktöriyel Fonksiyonu Analizi
+
+Fonksiyonun mantığı şu şekildedir:
+n! = n × (n - 1)!
+Temel durum (base case): Eğer n = 1 ise, faktöriyel 1'dir (1! = 1).
+
+int factorial(int n) {
+    if (n == 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+Eğer n değeri 1'e eşitse, fonksiyon 1 değerini döndürür. Bu, özyinelemenin durması için gerekli olan temel durumdur (base case).
+Eğer n 1'den büyükse, fonksiyon kendisini n - 1 ile çağırır ve her bir adımda n değeri ile çarpar.
+Bu şekilde sonuca ulaşılana kadar özyineleme devam eder.
+
+a)Zaman Karmaşıklığına göre Analiz:
+
+İşleyiş Adımları:
+
+İlk olarak, F(5) çağrılıyor.
+F(5) kendi içinde F(4)'ü çağırıyor.
+F(4) kendi içinde F(3)'ü çağırıyor.
+Bu süreç n = 1'e kadar devam ediyor, yani son çağrı F(1) olacak.
+
+Her adımda bir önceki çağrı bir kez daha fonksiyonu çalıştırdığı için toplamda n kez fonksiyon çağrısı gerçekleşir.
+
+Fonksiyon her seferinde kendini bir kez çağırdığı için toplam çağrı sayısı n'dir.
+F(5) -> F(4) -> F(3) -> F(2) -> F(1)
+n = 5 olduğu için toplamda 5 kez fonksiyon çalıştırılmış olur.
+
+Zaman karmaşıklığı, fonksiyonun kaç kez çağrıldığına göre hesaplanır. Bu durumda, n kez çağrı yapıldığı için zaman karmaşıklığı O(n) olur.
+Zaman karmaşıklığı O(n)'dir, çünkü fonksiyon toplamda n kez çalıştırılır.
+
+b)Alan Karmaşıklığına göre analiz:
+
+İşleyiş Adımları:
+
+İlk Çağrı (F(5)): Bellekte bir yığın oluşturulur ve F(4) çağrılana kadar bu yığın saklanır.
+İkinci Çağrı (F(4)): F(4) fonksiyonu çalıştırılır ve bellekte ikinci bir yığın oluşturulur.
+Üçüncü Çağrı (F(3)): Bellekte üçüncü bir yığın oluşturulur.
+Bu süreç F(1)'e kadar devam eder.
+
+Her fonksiyon çağrısı bellekte bir yığın oluşturur ve bu yığınlar n = 1'e kadar üst üste eklenir.
+Yani n kadar geri çağırma yığını bellekte tutulur.
+
+Bu geri çağırma yığınları, fonksiyon n = 1'e ulaştığında çözülmeye başlar.
+Ancak tüm bu adımlar bellekte tutulduğu için bellekte kullanılan toplam alan n kadar olur.
+
+Fonksiyonun her çağrısında bellekte bir geri çağırma yığını oluşur.
+Girdi boyutuna bağlı olarak n çağrı yapılacağı için, her bir çağrı bellekte tutulur.
+Dolayısıyla toplamda bellekte n birim yer kaplanır, yani alan karmaşıklığı O(n)'dir.
+
+Alan karmaşıklığı O(n)'dir, çünkü n kadar geri çağırma yığını oluşur ve bellekte tutulur.
+
+ANALİZ SONUCU:
+
+Zaman karmaşıklığı (Time Complexity):
+Fonksiyonun her adımda kendini çağırması, toplamda n kez çağrı yapılmasına sebep olur.
+Bu yüzden zaman karmaşıklığı O(n)'dir.
+
+Alan karmaşıklığı (Space Complexity):
+Her özyinelemeli çağrı sırasında bellekte bir geri çağırma yığını oluşur.
+Toplamda n yığın olduğundan alan karmaşıklığı O(n)'dir.
