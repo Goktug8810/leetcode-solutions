@@ -27,7 +27,6 @@
 var productExceptSelf = function(nums) {
     let n = nums.length;
     let result = new Array(n).fill(1);
-    let deney=[];
 
     // Sol çarpımları hesapla
     let leftProduct = 1;
