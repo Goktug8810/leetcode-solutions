@@ -1,4 +1,4 @@
-# Daily LeetCode Solutions
+# LeetCode Solutions
 
 This repository contains my daily JavaScript solutions to LeetCode problems. The goal is to improve problem-solving skills and track progress over time.
 
