@@ -1,0 +1,4 @@
+-Constraints Questions
+-Test Cases (attempt to simulate simple details)
+-Brut force intuition
+-Better approach intuition
