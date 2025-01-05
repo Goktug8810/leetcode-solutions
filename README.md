@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-This repository contains my daily JavaScript solutions to LeetCode problems. The goal is to improve problem-solving skills and track progress over time.
+This repository contains my JavaScript and C# solutions to LeetCode problems. The goal is to improve problem-solving skills and track progress over time.
 
 
 ## Purpose
